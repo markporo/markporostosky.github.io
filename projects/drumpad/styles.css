@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #283149;
+}
+
+h1 {
+    font-size: 12vmin;
+    color: rgb(104, 157, 177);
+    font-family: 'Major Mono Display', monospace;
+    text-shadow: 3px 0 rgb(180, 12, 12);
+    font-weight: bolder;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+div .container {
+    display: block;
+}
+
+footer {
+    display: block;
+    color: rgb(104, 157, 177);
+    text-shadow: 1.5px 0 #DA0463;
+    font-family: 'Major Mono Display', monospace;
+    clear: both;
+}
+
+.a {
+    background-image: url(images/kick4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.s {
+    background-image: url(images/kick3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.d {
+    background-image: url(images/snare2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.f {
+    background-image: url(images/snare.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.g {
+    background-image: url(images/HH.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.h {
+    background-image: url(images/tom1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.j {
+    background-image: url(images/tom2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.k {
+    background-image: url(images/tom3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.l {
+    background-image: url(images/crash2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.set {
+    display: flex;
+    margin: 2% auto;
+    height: 70vh;
+    flex-wrap: wrap;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.pressed {
+    box-shadow: 0 0px 50px 0 rgb(233, 240, 243);
+    background-image: none;
+    background-color: bisque;
+}
+
+.red {
+    color: red;
+}
+
+.drum {
+    background-blend-mode: darken;
+    filter: contrast(80%);
+    outline: none;
+    border: 10px solid #404B69;
+    font-size: 8vmin;
+    font-family: 'Major Mono Display', monospace;
+    line-height: 2;
+    font-weight: 1200;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px black;
+    border-radius: 15px;
+    display: inline-block;
+    width: 33%;
+    height: 33%;
+    text-align: center;
+    margin: 0;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="remixcontact.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+</head>
+
+<body>
+    <container>
+        <header>
+            <img src="images/whiteclemixlogo.jpg" id="logo">
+            <nav>
+
+                <h1>
+                    Connect with CLEMix
+                </h1>
+                <ul>
+                    <li><a href="http://www.poromusic.com/" target="_contact">Contact</a></li>
+                    <li><a href="http://www.thelighthouseandthewhaler.com/" target="_self">Remixes</a></li>
+                    <li><a href="http://www.poromusic.com/" target="_self">Home</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img id="bgimg" src="images/vinylbg.jpeg" alt="Work with Poro">
+            <div id="formcontainer">
+                <div id="formtitle">
+                    <h2>Submit for Remix</h2>
+                </div>
+                <div id="name">
+                    <form name="message" id="contactclemixes">
+                        <div id="namewrapper">
+                            <p id="firstnameid">First Name: </p><input type="text" name="firstname" action="#" method="get" size="130" value="John">
+
+                            <p> Last Name:</p> <input type="text" name="lastname" action="#" method="get" size="130" value="smith">
+                        </div>
+                        <div id="bandandroll">
+                            <p>Band: </p><input type="text" name="band" action="#" method="get" size="130" value="your band name">
+
+                            <p> Your Roll:</p> <input type="text" name="roll" value="Manager, Label, Bass Player?" action="#" method="get" size="130">
+                        </div>
+
+                        <div id="commentsection">
+                            <textarea name="comments" rows="9" cols="200"></textarea>
+                        </div>
+                        <div id="submitbutton" onclick="logthosemixes('Yeah! Someone submitted a remix on ' + Date())" onclick="checkName()">
+                            <input type="submit" name="submit" action="#" method="get" onclick="thankyou('Thank you for reaching out to CLEMixes! We will be in touch with you soon.')">
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </main>
+        <footer>
+            <!--copyright and li for nav/ also social media icons-->
+            <div id="sociallinks">
+
+                <a href="http://www.thelighthouseandthewhaler.com" target="_new"><img src="images/fbblackandwhiteicon.png"></a>
+
+
+                <a href="http://www.instagram.com/poromusic" target="_new"><img src="images/instablackandwhiteicon.png"></a>
+
+
+                <a href="http://www.twitter.com/thelighthouseandthewhaler" target="_new"><img src="images/twitterblackandwhiteicon.png"></a>
+
+            </div>
+            <div class="footertext">
+                <p> Copyrigt (C) CLEMix All Rights Reserved</p>
+            </div>
+        </footer>
+    </container>
+    <script src="clemix.js"></script>
+</body>
+
+</html>
