@@ -1,0 +1,93 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+body {
+    display: block;
+    margin: 0px auto;
+    width: 300px;
+}
+
+main {
+    display: block;
+    width: 250px;
+    margin: 5px auto 10px auto;
+    border: 1.5px solid black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin: 2px auto;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    text-shadow: 1px 1px 4px rgb(104, 121, 185);
+}
+
+p {
+    margin: 5px 10px 1px 10px;
+    padding: 0px;
+    font-size: 10px;
+    font-family: 'Coming Soon', cursive;
+    text-shadow: 1px 1px 1px rgb(193, 197, 209);
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0px 0px 0px 50px;
+}
+
+hr {
+    margin: 2px auto;
+    border-color: lightgray;
+    width: 90%;
+}
+
+li {
+    text-shadow: 1px 1px 1px rgb(193, 197, 209);
+}
+
+li span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container {
+    background-color: darkgrey;
+    background: radial-gradient(rgb(170, 132, 108), rgba(161, 128, 57, 0.623), rgb(78, 76, 76));
+    border: 4px inset black;
+    border-radius: 8px;
+}
+
+#charimg {
+    display: block;
+    width: 259px;
+    margin: 0px auto 5px auto;
+    padding: 0px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+#stats {
+    font-size: 10px;
+    font-family: 'Coming Soon', cursive;
+}
+
+#abilityindex {
+    display: block;
+    position: relative;
+    left: 48px;
+    font-family: 'Coming Soon', cursive;
+    color: rgb(5, 45, 56)
+}
+
+.fact {
+    font-style: italic;
+}
+
+.stattitle {
+    font-size: 12px;
+    font-weight: bolder;
+}

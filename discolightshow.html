@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chapter 12 - HTML5 Canvas with animation</title>
+
+
+    <style type="text/css">
+    body {
+            background-color: blanchedalmond;
+        }
+        
+        main {
+            width: 100%;
+            margin: 0 auto;
+            background-color: blanchedalmond;
+        }
+        
+        #buttons {
+            margin: 7.5% auto;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        button {
+            height: 40px;
+        }
+    }
+    #displayColor {
+        font-size: 24px;
+        text-align: center;
+    }
+    canvas {
+        border: 5px solid black;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 60%;
+        background-color: whitesmoke;
+    }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <div id="buttons">
+            <button id="discoStart">Start the Show!</button>
+            <button id="discoStop">Stop the Show!</button>
+        </div>
+
+        <canvas id="whiteBoard" width="500" height="500"></canvas>
+
+        <p id="displayColor"></p>
+
+    </main>
+
+
+    <script type="text/javascript">
+        var notRunning = true; // prevents double-run bug. 
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF'.split('');
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function discoSquare() {
+
+            var canvas = document.getElementById("whiteBoard");
+            var context = canvas.getContext("2d");
+
+            var verPos = Math.floor((Math.random() * 499) + 1);
+            var theColor = getRandomColor();
+
+
+            context.lineWidth = 10;
+            context.strokeStyle = theColor;
+            context.moveTo(10, verPos); // (horizontal / vertical)
+            console.log("vertical pos: " + verPos);
+
+            context.lineTo(500, verPos);
+            context.lineCap = "butt";
+            context.stroke();
+
+            document.getElementById("displayColor").innerHTML = theColor;
+
+        }
+
+        var animation;
+
+        document.getElementById("discoStart").onclick = function() {
+
+            if (notRunning) {
+                animation = setInterval(discoSquare, 100);
+                notRunning = false;
+            } else {
+                alert("Sorry, already running.")
+            }
+
+        }
+
+        document.getElementById("discoStop").onclick = function() {
+
+            clearInterval(animation);
+            notRunning = true;
+        }
+    </script>
+
+
+</body>
+
+</html>

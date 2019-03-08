@@ -1,0 +1,246 @@
+                * {
+                    padding: 0px;
+                    margin: 0px;
+                }
+                
+                nav {
+                    /*position: fixed;
+    top: 0px;*/
+                    padding: 10px 0px;
+                    width: 100%;
+                    height: 140px;
+                    background-color: white;
+                }
+                
+                #tlatwlogo {
+                    float: left;
+                    max-width: 118px;
+                    margin: 10px;
+                    padding-top: 15px;
+                    padding-left: 40px;
+                }
+                
+                nav li {
+                    float: left;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 11px;
+                    padding-top: 75px;
+                    padding-left: 25px;
+                    list-style-type: none;
+                }
+                
+                nav li a:hover {
+                    color: #000000;
+                    filter: drop-shadow(.5px .5px .2px rgb(126, 113, 113));
+                    -webkit-filter: drop-shadow(.5px .5px .2px rgb(126, 113, 113));
+                }
+                
+                #socialdiv {
+                    width: 250px;
+                    float: right;
+                    margin-right: 60px;
+                    margin-top: 58px;
+                    padding-right: 10px;
+                }
+                
+                .sociallinks {
+                    width: 24px;
+                    max-width: 42px;
+                    padding: 10px;
+                }
+                
+                main {
+                    width: 100%;
+                    margin: 0px auto;
+                    background-color: white;
+                    min-height: calc(100vh - 350px);
+                }
+                
+                #pagetitlediv {
+                    width: 100%;
+                    background-color: #a6a6a6;
+                    background-color: #171717;
+                    color: #a6a6a6;
+                    padding: 0px;
+                }
+                
+                div h1 {
+                    text-align: center;
+                    font-family: 'bernhardMod BT', 'Times New Roman', Times, serif;
+                    letter-spacing: 3px;
+                }
+                
+                main p {
+                    padding: 5px;
+                    margin: 10px;
+                }
+                
+                caption {
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
+                
+                table {
+                    margin: 30px auto;
+                    padding: 20px;
+                    width: 90%;
+                    border: 1px solid black;
+                    text-align: center;
+                    border-radius: 5px;
+                    background-color: #a6a6a6;
+                }
+                
+                .year {
+                    display: none;
+                }
+                
+                th {
+                    border: 1px solid black;
+                    text-align: center;
+                }
+                
+                tr {
+                    border: 1px solid black;
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                }
+                
+                td {
+                    border: 1px solid black;
+                }
+                
+                footer {
+                    width: 100%;
+                    height: 200px;
+                    background-color: #171717;
+                    text-align: center;
+                }
+                
+                footer a {
+                    display: inline-block;
+                    color: white;
+                    padding: 10px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 65px;
+                }
+                
+                a:link,
+                a:active,
+                a:visited {
+                    color: #595959;
+                    text-decoration: none;
+                    font-family: runda;
+                }
+                
+                a:hover {
+                    text-decoration: none;
+                    color: #a19898;
+                }
+                
+                .sociallinks:hover {
+                    will-change: opacity;
+                    filter: opacity(50%);
+                    -webkit-filter: opacity(50%);
+                }
+                
+                #copyright {
+                    margin: 0px auto;
+                    padding: 40px 0px 0px 0px;
+                    letter-spacing: 5px;
+                    color: white;
+                    text-align: center;
+                    font-size: x-small;
+                }
+                
+                @media screen and (max-width: 760px) {
+                    #socialdiv {
+                        width: 250px;
+                        float: right;
+                        margin-right: 0px;
+                        margin-top: 58px;
+                        padding-right: 0px;
+                    }
+                    .album,
+                    .date {
+                        display: none;
+                    }
+                }
+                
+                @media screen and (max-width: 680px) {
+                    #socialdiv,
+                    .sociallinks {
+                        display: none;
+                    }
+                    .year {
+                        display: table-cell;
+                        width: 15%;
+                    }
+                    .episode {
+                        display: none;
+                    }
+                    footer a {
+                        padding: 10px;
+                        margin-top: 25px;
+                    }
+                    #copyright {
+                        padding: 25px 0px 0px 0px;
+                        letter-spacing: 3px;
+                    }
+                }
+                
+                @media screen and (max-width: 450px) {
+                    nav li {
+                        font-size: 10px;
+                        padding-left: 20px;
+                    }
+                    h1 {
+                        font-size: 28px;
+                    }
+                    footer a {
+                        padding: 10 5px 0px 5px;
+                        margin-top: 20px;
+                    }
+                }
+                
+                @media screen and (max-width: 430px) {
+                    #pagetitlediv {
+                        width: 100%;
+                        height: 20px;
+                    }
+                    div h1 {
+                        font-size: 18px;
+                        padding: 0px;
+                        margin: auto auto;
+                    }
+                    div #tlatwlogo {
+                        max-width: 30%;
+                        float: none;
+                        clear: both;
+                        display: block;
+                        margin: 0px auto;
+                    }
+                    nav ul {
+                        display: block;
+                        margin: 0px;
+                        margin-left: 21%;
+                    }
+                    nav li {
+                        float: none;
+                        padding: 0px 15px 0px 15px;
+                        clear: both;
+                        display: inline-block;
+                    }
+                    table {
+                        margin: 5px auto;
+                        padding: 5px;
+                        width: 95%;
+                        border: 1px solid black;
+                        text-align: center;
+                        font-size: .8em;
+                    }
+                    body {
+                        min-width: 375px;
+                    }
+                }
